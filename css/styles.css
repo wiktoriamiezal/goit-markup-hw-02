@@ -133,6 +133,9 @@ button {
   letter-spacing: 0.02;
   text-transform: capitalize;
 }
+.our-team-list {
+  background-color: var(--WHITE);
+}
 .team-card-heading {
   color: var(--NAVY-BLUE);
   font-size: 20px;
