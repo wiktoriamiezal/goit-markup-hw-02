@@ -28,7 +28,7 @@ button {
 }
 .logo {
   color: var(--IRIS);
-  font-family: var(--font-secondary);
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -124,6 +124,15 @@ button {
 .our-team {
   background-color: var(--CLOUD);
 }
+.header-two {
+  color: var(--NAVY-BLUE);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02;
+  text-transform: capitalize;
+}
 .team-card-heading {
   color: var(--NAVY-BLUE);
   font-size: 20px;
@@ -147,9 +156,8 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background-color: var(--CLOUD, #f4f4fd);
+  border: 1px solid var(--CORNFLOWER);
+  background-color: var(--CLOUD);
 }
 .btn-portfolio-menu:focus,
 .btn-portfolio-menu:hover {
