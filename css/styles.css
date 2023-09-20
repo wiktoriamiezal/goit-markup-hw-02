@@ -11,27 +11,21 @@
   --GREY: #2e2f42b2;
   --WHITE: #ffffff;
   --DAIRY: #fcfcfc;
-  --font-primary: 'Roboto', sans-serif;
-  --font-secondary: 'Raleway', sans-serif;
 }
 body {
-  font-family: var(--font-primary), sans-serif;
-  color: var(--text);
-  background-color: var(--white-background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--SLATE);
+  background-color: var(--WHITE);
 }
-ul {
-  list-style: none;
-}
+
 button {
   cursor: pointer;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 /* navigation */
-
+.link {
+  text-decoration: none;
+}
 .logo {
   color: var(--IRIS);
   font-family: var(--font-secondary);
@@ -44,11 +38,18 @@ a {
 .studio {
   color: var(--NAVY-BLUE);
 }
+.list {
+  list-style: none;
+}
 .navigation-link {
   color: var(--NAVY-BLUE);
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.address {
+  font-style: normal;
 }
 .header-contacts {
   color: var(--SLATE);
@@ -68,28 +69,26 @@ a {
 .hero-image {
   background-color: var(--NAVY-BLUE);
 }
-h1 {
+.main-header {
   color: var(--WHITE, #fff);
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 1.71;
+  line-height: 1.07;
   letter-spacing: 0.02em;
 }
 .btn-order {
   color: var(--WHITE, #fff);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
   background-color: var(--IRIS);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .btn-order:focus,
 .btn-order:hover {
-  border-radius: 4px;
   background: var(--OCEAN);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* index section 1 */
@@ -109,7 +108,7 @@ h1 {
 
 /* index section 2 */
 
-h2 {
+.header-two {
   color: var(--NAVY-BLUE);
   text-align: center;
   font-size: 36px;
@@ -142,6 +141,8 @@ h2 {
 
 .btn-portfolio-menu {
   color: var(--IRIS);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
@@ -154,8 +155,6 @@ h2 {
 .btn-portfolio-menu:hover {
   color: var(--WHITE);
   background-color: var(--OCEAN, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .portfolio-pic-heading {
   color: var(--NAVY-BLUE);
@@ -166,17 +165,18 @@ h2 {
 }
 .portfolio-pic-description {
   color: var(--SLATE);
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /* footer */
 
-footer {
+.footer {
   background-color: var(--NAVY-BLUE);
 }
 .logo-footer {
   color: var(--IRIS);
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -188,5 +188,7 @@ footer {
 }
 .footer-text {
   color: var(--CLOUD);
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
